@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Flutter Shorebird Demo Home Page'),
     );
   }
 }
@@ -108,10 +108,10 @@ class _MyHomePageState extends State<MyHomePage> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             Text(
-              'A Shorebird app',
-              style: Theme.of(context).textTheme.displayMedium,
+              'A Shorebird app\n Second release',
+              style: Theme.of(context).textTheme.bodyLarge,
             ),
-            const Text('You have pushed the button this many times:'),
+            Text('Pushed the button $_counter times:'),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineLarge,
@@ -123,7 +123,7 @@ class _MyHomePageState extends State<MyHomePage> {
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      ),
     );
   }
 }
